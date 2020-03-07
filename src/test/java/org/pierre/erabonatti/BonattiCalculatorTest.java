@@ -24,6 +24,11 @@ class BonattiCalculatorTest {
         assertEquals(12, result2.getMonthValue());
         assertEquals(1, result2.getDayOfMonth());
 
+        String asString = bonattiCalculator.convertToNewEraAsString(mydate1);
+        assertEquals("21 Freneo 65", asString);
+
+        String asString2 = bonattiCalculator.convertToNewEraAsStringFromString("20200218");
+        assertEquals("21 Freneo 65", asString2);
 
     }
 
